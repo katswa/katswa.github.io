@@ -16,6 +16,11 @@ body {
 	background-color: #000;
 }
 
+body h1 {
+	font-family: 'Lobster', sans-serif;
+	padding: 4px;
+}
+
 img {
 	max-width: 100%;
 	display: block;
@@ -34,9 +39,9 @@ header {
 header img {
 	margin: 0 auto;
 	float: right;
-	padding: 15% 3% 0% 3%;
-	width: 180px;
-	height: 180px;
+	padding: 22% 3% 0% 3%;
+	width: 160px;
+	height: 160px;
 }
 
 /* Style rules for navigation area */
@@ -86,6 +91,10 @@ nav li a {
 	display: none;
 }
 
+.desktop {
+	display: none;
+}
+
 /* Style rules for main content */
 main {
 	background: #fff;
@@ -98,6 +107,33 @@ main {
 	margin: 0 2%;
 }
 
+#one p, #two p, #three p{
+	padding: 2%;
+	color: #808080;
+	background-color: #dedede;
+}
+
+#details p, #details h2 {
+	margin: 1% 4%;
+}
+
+#details p {
+	color: #808080;
+}
+
+#details ul {
+	padding-bottom: 3%;
+	color: #808080;
+}
+
+#details img {
+	margin-top: 5%;
+}
+
+#details {
+	background: linear-gradient(to bottom, #fff, #fff, #dedede);
+}
+
 .round {
 	border-radius: 8px;
 }
@@ -106,31 +142,46 @@ main {
 	text-align: center;
 }
 
+#contact h2 {
+	margin-bottom: 5%;
+}
+
 #contact .contact-email-link {
-	color: #666600;
+	color: white;
+	background-color: #2a2a2a;
 	text-decoration: none;
+	padding: 15px;
+	border-image: linear-gradient(to right, #de8577, #d8c380, #7780de) 30;
+	border-width: 5px;
+	border-style: solid;
 }
 
 .map {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: 2px solid #edb195;
+	border: 2px solid #7780de;
 	width: 95%;
-	height: 50%;
+	height: 400px;
 }
 
-#introduction {
-	background-color: #d0d0d0;
+.introduction {
+	background-color: #2a2a2a;
+	border-image: linear-gradient(to bottom, #de8577, #d8c380, #7780de) 30;
+	border-width: 10px;
+	border-style: solid;
 	padding: 1% 2%;
+	margin-bottom: 3%;
 }
 
-#introduction dt {
-	font-weight: bold;
+.introduction h1 {
+	font-size: 2em;
 }
 
-#introduction dd {
-	padding: 0.5% 1% 2% 0;
+.introduction p, .introduction h1 {
+	padding: 2%;
+	color: white;
+	text-align: center;
 }
 
 /* Style rules for footer content */
@@ -160,6 +211,10 @@ footer p a {
 		display: block;
 	}
 	
+	.desktop {
+		display: none;
+	}
+	
 	.mobile {
 		display: none;
 	}
@@ -174,15 +229,15 @@ footer p a {
 	
 	header img {
 		margin: .5em;
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 		padding-right: 3%;
-		padding-top: 3%;
+		padding-top: 15%;
 	}
 	
 	.tablet-desktop img {
 		border-image: linear-gradient(to right, #de8577, #d8c380, #7780de) 30;
-		border-width: 25px 0px 25px 0px;
+		border-width: 25px 0px 0px 0px;
 		border-style: solid;
 		margin-left: auto;
 		margin-right: auto;
@@ -194,10 +249,10 @@ footer p a {
 		display: inline-block;
 		margin-top: 3em;
 		margin-bottom: 2em;
-		border-right: 1px solid #edb195;
 	}
 	
 	nav li:last-child {
+		border-left: 2px solid #7780de;
 		border-right: none;
 	}
 	
@@ -206,19 +261,51 @@ footer p a {
 		border-bottom: none;
 	}
 	
+	nav li:nth-child(2) {
+		border-left: 2px solid #de8577;
+		border-right: 2px solid #d8c380;
+	}
+	
 	nav li a {
 		padding: 1em 0.5em;
 	}
 	
 	/* Tablet Viewport: Style rules for main content area */
-	main ul {
-		margin: 0 0 4% 10%;
+	
+	main dl dd {
+		color: #808080;
+	}
+	
+	main dl dt {
+		font-size: 1.2em;
+		padding: 1%;
+	}
+	
+	main dl {
+		padding: 15px;
+		background-color: #dedede;
+	}
+	
+	#details img {
+		max-width: 90%;
+		border-image: linear-gradient(to bottom, #de8577, #d8c380, #7780de) 30;
+		border-width: 0px 30px 0px 30px;
+		border-style: solid;
+	}
+	
+	#details ul {
+		margin: 0 0 3% 10%;
 	}
 	
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1005px), print {
+	
+	/* Desktop Viewport: Show desktop specific class */
+	.desktop {
+		display: block;
+	}
 	
 	/* Desktop Viewport: Style rule for header and img */
 	header {
@@ -230,6 +317,7 @@ footer p a {
 	header img {
 		margin: 0 auto;
 		float: right;
+		padding-top: 2%;
 		width: 200px;
 		height: 200px;
 	}
@@ -249,27 +337,32 @@ footer p a {
 		border: none;
 	}
 	
+	nav li:nth-child(2) {
+		border-left: none;
+		border-right: none;
+	}
+	
+	nav li:last-child {
+		border-left: none;
+	}
+	
 	nav li a {
 		padding: 0.5em 1em;
 	}
 	
-	nav li a:hover {
-		color: #351712;
-		background-color: #edb195;
+	nav li a:hover{
+		color: black;
+		background-color: #d8c380;
+	}
+	
+	#contact .contact-email-link:hover {
+		color: black;
+		background-color: #bebebe;
 	}
 	
 	/* Desktop Viewport: Style Rules for main content */
 	main {
 		clear: left;
-	}
-	
-	main h1 {
-		font-size: 1.8em;
-		margin-left: 30px;
-	}
-	
-	main h3 {
-		margin-left: 30px;
 	}
 	
 	.gallery {
@@ -290,7 +383,23 @@ footer p a {
 	#one, #two, #three {
 		width: 29%;
 		float: left;
-		margin: 0 2%;
+		margin: 0 1%;
+	}
+	
+	#one p, #two p, #three p {
+		background: none;
+		color: #808080;
+	}
+	
+	#one {
+		margin-left: 2.3%;
+	}
+	
+	#two {
+		border-image: linear-gradient(to bottom, #de8577, #d8c380, #7780de) 30;
+		border-width: 0px 4px 0px 4px;
+		border-style: solid;
+		padding: 0 2%;
 	}
 	
 	#details {
@@ -303,10 +412,49 @@ footer p a {
 		height: 583px;
 	}
 	
+	.introduction {
+		height: 600px;
+		width: 27%;
+		float: left;
+		margin: 0 2% 2% 0;
+	}
+	
+	.introduction img {
+		padding: 1%;
+		border-top: none;
+		height: 200px;
+		width: 200px;
+	}
+	
+	.introduction h1 {
+		font-size: 3em;
+		padding-top: 18%;
+	}
+	
+	.introduction p{
+		padding: 1% 3% 10% 3%;
+	}
+	
+	main dl {
+		height: 175px;
+		padding-bottom: 1%;
+		text-align: left;
+		vertical-align: middle;
+		margin-left: 33%;
+	}
+	
+	.desktop img {
+		border-image: linear-gradient(to right, #de8577, #d8c380, #7780de) 30;
+		border-width: 25px 0px 0px 0px;
+		border-style: solid;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 }
 
 /* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px){
+@media screen and (min-width: 1900px){
 	
 	#container {
 		width: 1920px;
