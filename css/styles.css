@@ -103,6 +103,12 @@ main {
 	font-family: 'DM Serif Display', serif;
 }
 
+p a {
+	color: #fff;
+	padding: 10px;
+	margin: 2em;
+}
+
 #one, #two, #three {
 	margin: 0 2%;
 }
