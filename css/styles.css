@@ -1,6 +1,6 @@
 /*
 Author: Katie Swanson
-Date: 1 / 24 / 2024
+Date: 4 / 10 / 2025
 File Name: styles.css
 */
 
@@ -226,6 +226,22 @@ footer p a {
 	}
 	
 	/* Tablet Viewport: Style rule for header and header/hero img */
+	#hero {
+	  	position: relative;
+	}
+	
+	.hero-box {
+	  	position: absolute;
+	  	bottom: 10%;
+  	  	background: rgba(10, 40, 20, 0.5);
+	}
+	
+	.hero-box h1 {
+	  	color: white;
+	  	font-size: 200%;
+	  	padding: 0.5em;
+	}
+	
 	header {
 		float: right;
 		position: static;
@@ -314,6 +330,10 @@ footer p a {
 	}
 	
 	/* Desktop Viewport: Style rule for header and img */
+	.hero-box h1 {
+	  font-size: 300%;
+	}
+	
 	header {
 		width: 25%;
 		float: right;
@@ -323,16 +343,17 @@ footer p a {
 	header img {
 		margin: 0 auto;
 		float: right;
-		padding-top: 2%;
-		width: 200px;
-		height: 200px;
+		padding-top: 5%;
+		width: 150px;
+		height: 150px;
 	}
 	
 	/* Desktop Viewport: Style tules for nav area */
 	nav {
-		float: left;
 		width: 50%;
 		margin: 0em 0.5em 1em 0;
+		padding: 0;
+		padding-left: 30px;
 	}
 	
 	nav ul {
