@@ -1,6 +1,6 @@
 /*
 Author: Katie Swanson
-Date: 4 / 17 / 2025
+Date: 4 / 25 / 2025
 File Name: styles.css
 */
 
@@ -269,6 +269,35 @@ footer p a {
 		border-style: solid;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	
+	.price-box {
+  	  	background: #2a2a2a;
+		color: white;
+		padding: 0.75em;
+		text-align: center;
+		border-image: linear-gradient(to right, #de8577, #d8c380, #7780de) 30;
+		border-width: 10px;
+		border-style: solid;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.5em;
+		padding-bottom: 2em;
+	}
+	
+	.price-box h1 {
+		font-size: 1.7em;
+		padding: 0.7em;
+	}
+	
+	#price-title {
+	  	position: absolute;
+		bottom: 10%;
+		color: white;
+		background: rgba(10, 40, 20, 0.5);
+		padding: 1em;
+		border: none;
 	}
 	
 	/* Tablet Viewport: Style rules for nav area */
