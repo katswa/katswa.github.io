@@ -30,38 +30,51 @@
 		</nav>
 	
 		<!-- Use the main area to add the main content of the webpage -->
-		<main>
-		
-			<div class="gallery">
-
-				<img src="images/vending-machine-art.jpg" alt="Watercolor artwork of a vending machine" class="image">
-				<img src="images/graffiti-artwork.jpg" alt="Watercolor artwork of a graffitied building" class="image">
-				
-			</div>
+		<main class="main wrapper">
 			
-			<div class="gallery">
-				
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+			    	<span class="close">&times;</span>
+			    	<img src="images/vending-machine-art.jpg" id="modal-image" alt="Placeholder for larger preview images">
+				</div>
+			</div>
+				<section class="gallery large-gallery">
+					<div class="boxOfimages">
+						<div class="big-img">
+			    			<input type="image" id="imageBox1" src="images/vending-machine-art.jpg" alt="Watercolor artwork of a vending machine">
+			 		   </div>
+			   		<div class="boxOfsmallImgs">
+			    		<img src="images/vending-machine-art.jpg" onclick="galleryFunction1(this)" alt="Watercolor artwork of a vending machine">
+			    		<img src="images/graffiti-artwork.jpg" onclick="galleryFunction1(this)" alt="Watercolor artwork of a graffitied building">
+			    		<img src="images/pool-slide-art.jpg" onclick="galleryFunction1(this)" alt="Watercolor artwork of a pool and slide">
+			   	 	</div>
+				</div>
+			 	<div class="boxOftext">
+			    	<h2>Katie Swanson / “Liminal Spaces”</h2>
+			    	<p>watercolor / pen / colored pencil</p>
+			      	<p>Pieces and compositions from my year long investigation regarding liminal spaces. <br>
+					Through these pieces, I explore the feeling of dissonance, transition, and familiarity.</p>
+			 	</div>
+			</section>
+			
+			<div class="large-gallery">
+			
 				<img src="images/vfw-artwork.jpg" alt="Watercolor artwork of a WW2 photograph" class="image">
 				<img src="images/boquet-artwork.jpg" alt="Watercolor artwork of a flower boquet" class="image">
 				
 			</div>
 			
-			<div class="gallery">
+			<div class="large-gallery">
 				
 				<img src="images/multicolored-cats.jpg" alt="Digital artwork of multiple colored cats" class="image">
-				<img src="images/pool-slide-art.jpg" alt="Watercolor artwork of a pool and slide" class="image">
+				<img src="images/bike-mural.jpg" alt="Outdoor mural of a bike and scenery" class="image">
 				
 			</div>
-			
-			<div class="gallery">
-				
-				<img src="images/bike-mural.jpg" alt="Outdoor mural of a bike and scenery" class="image">
-						
+
 			<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sus!4v1707959400842!5m2!1sen!2sus!6m8!1m7!1sb-gHzakUNB0F5bxDcaDfgQ!2m2!1d48.28823987496875!2d-122.6487601327528!3f340.07963679686264!4f-10.442430047494781!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 			
-			</div>
-			
-			<h2>Want to see my mural in person? Feel free to visit this mural and many others for no fee today.</h2>
+			<h2>Wish to visit my mural in person? Feel free to visit this mural and many others for no fee today.</h2>
 			
 		</main>
 	
@@ -72,6 +85,8 @@
 		</footer>
 	
 	</div>
+	
+	<script src="js/domevent.js"></script>
 	
 </body>
 </html>
