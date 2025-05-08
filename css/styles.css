@@ -1,6 +1,6 @@
 /*
 Author: Katie Swanson
-Date: 5 / 1 / 2025
+Date: 5 / 8 / 2025
 File Name: styles.css
 */
 
@@ -161,6 +161,19 @@ p a {
 	border-width: 5px;
 	border-style: solid;
 	margin-bottom: 4em;
+}
+
+.show {
+	/* Styling jQuery notice to click process images for more details */
+	font-size: 0.5em;
+	color: white;
+	background-color: #bababa;
+	padding: 15px;
+	margin-left: 1em;
+}
+
+.show:hover {
+	cursor: pointer;
 }
 
 .map {
