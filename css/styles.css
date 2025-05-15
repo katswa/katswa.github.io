@@ -1,6 +1,6 @@
 /*
 Author: Katie Swanson
-Date: 5 / 8 / 2025
+Date: 5 / 14 / 2025
 File Name: styles.css
 */
 
@@ -191,7 +191,6 @@ p a {
 	border-width: 10px;
 	border-style: solid;
 	padding: 1% 2%;
-	margin-bottom: 3%;
 }
 
 .introduction h1 {
@@ -435,18 +434,33 @@ footer p a {
 	
 	/* Tablet Viewport: Style rules for main content area */
 	
-	main dl dd {
-		color: #808080;
+	#accordion {
+	  background-color: #eee;
+	  color: #444;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  text-align: left;
+	  border: none;
+	  outline: none;
+	  transition: 0.4s;
+	  height: 600px;
+	}
+
+	.panel-button:hover {
+		background-color: #ccc;
 	}
 	
-	main dl dt {
-		font-size: 1.2em;
-		padding: 1%;
+	.panel-button {
+		padding: 1em;
 	}
-	
-	main dl {
-		padding: 15px;
-		background-color: #dedede;
+
+	.panel {
+	  padding: 0 18px;
+	  background-color: white;
+	  display: none;
+	  overflow: hidden;
+	  height: 200px;
 	}
 	
 	#details img {
@@ -614,7 +628,7 @@ footer p a {
 		height: 600px;
 		width: 27%;
 		float: left;
-		margin: 0 2% 2% 0;
+		margin-right: 1%;
 	}
 	
 	.introduction img {
@@ -631,14 +645,6 @@ footer p a {
 	
 	.introduction p {
 		padding: 1% 3% 10% 3%;
-	}
-	
-	main dl {
-		height: 175px;
-		padding-bottom: 1%;
-		text-align: left;
-		vertical-align: middle;
-		margin-left: 33%;
 	}
 	
 	.desktop img {
