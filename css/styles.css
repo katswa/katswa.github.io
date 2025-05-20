@@ -1,6 +1,6 @@
 /*
 Author: Katie Swanson
-Date: 5 / 14 / 2025
+Date: 5 / 20 / 2025
 File Name: styles.css
 */
 
@@ -405,6 +405,75 @@ footer p a {
 		border: none;
 	}
 	
+	/********** SLIDER **********/
+
+
+	.slide-viewer {
+		position: relative; /* needed for IE7 */
+		overflow: hidden;
+	    height: 450px;
+	}
+
+	.slide-group {
+	    width: 100%;
+	    height: 100%;
+	    position: relative;
+	}
+
+	.slide {
+	    width: 100%;
+	    height: 100%;
+	    display: none;
+	    position: absolute;
+	}
+	
+	.slide-group img {
+		height: 450px;
+		width: 100%;
+		oveflow-x: hidden
+	}
+
+	.slide:first-child {
+	    display: block;
+	}
+	
+	.hero-container {
+	  position: static;
+	}
+	
+	.crop-container {
+		position: static;
+		width: 1920px;
+		height: 400px;
+		margin-bottom: 8em;
+	}
+	
+	.hero-container img {
+		border-top: 1em solid white;
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+	}
+	
+	/********** BUTTONS **********/
+	.slide-buttons {
+		text-align: center;
+		background: #fff;
+	}
+
+	.slide-btn {
+		border: none;
+		background: none;
+		color: #000;
+		font-size: 200%;
+		line-height: 0.5em;
+	}
+
+	.slide-btn.active, .slide-btn:hover {
+		color: #ed8e6c;
+		cursor: pointer;
+	}
+	
 	/* Tablet Viewport: Style rules for nav area */
 	nav li {
 		border-top: none;
@@ -522,7 +591,7 @@ footer p a {
 	
 	/* Desktop Viewport: Style rule for header and img */
 	.hero-box h1 {
-	  font-size: 300%;
+	  font-size: 200%;
 	}
 	
 	header {
