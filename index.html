@@ -29,14 +29,28 @@
 			</ul>
 		</nav>
 		
-		<!-- Hero Image -->
+		<!-- Hero Image Sliders -->
 		
-        <div id="hero" class="tablet-desktop">
-            	<img src="images/painted-grass-hills.jpg" alt="Digitally Painted Grassy Hills">
-			<div class="hero-box">
-				<script src="js/javascript.js"></script>
+		<div id ="hero" class="slider tablet-desktop hero-container">
+			<div class="slide-viewer">
+				<div class="slide-group crop-container">
+					<div class="slide slide-1">
+						<img src="images/painted-grass-hills.jpg" alt="Digitally Painted Grassy Hills">
+					</div>
+					<div class="slide slide-2">
+						<img src="images/painted-lake.jpg" alt="Digitally Painted Sunset over Lake">
+					</div>
+					<div class="slide slide-3">
+						<img src="images/painted-trees.jpg" alt="Digitally Painted Forest Horizon">
+					</div>
+				</div>
+				<div class="hero-box">
+					<script src="js/javascript.js"></script>
+				</div>
 			</div>
-        </div>
+			<div class="slide-buttons">
+			</div>
+		</div>
 	
 		<!-- Use the main area to add the main content of the webpage -->
 		<main>
@@ -98,6 +112,7 @@
 	
 	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+	<script src="js/contentpanel.js"></script>
 	<script src="js/api.js"></script>
 	
 </body>
