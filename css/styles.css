@@ -1,6 +1,6 @@
 /*
 Author: Katie Swanson
-Date: 5 / 20 / 2025
+Date: 5 / 28 / 2025
 File Name: styles.css
 */
 
@@ -250,10 +250,10 @@ p a {
 }
 
 .gallery {
-	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+	border: solid;
+	border-width: 2px 0px 2px 0px;
+	border-color: #cacaca;
 }
 
 .gallery img {
@@ -299,6 +299,32 @@ p a {
 
 .boxOftext p {
 	padding: 10px 10px;
+}
+
+/* Style rules for gallery filter buttons and header */
+#gallery-buttons button {
+	background-color: #d7d7d7;
+	border: none;
+	padding: 3px 10px 4px 10px;
+	margin: 1em;
+	border-radius: 4px;
+	color: #333;
+	font-family: 'DM Serif Display', serif;
+	font-size: 100%;
+}
+
+#gallery-buttons button:hover, #gallery-buttons button.active {
+	background-color: #de8577;
+	color: #fff;
+	cursor: pointer;
+}
+
+#gallery-header {
+	text-align: center;
+}
+
+#gallery-header h1 {
+	margin: 1em;
 }
 
 /* Style rules for footer content */
@@ -430,7 +456,6 @@ footer p a {
 	.slide-group img {
 		height: 450px;
 		width: 100%;
-		oveflow-x: hidden
 	}
 
 	.slide:first-child {
@@ -657,9 +682,6 @@ footer p a {
 		justify-content: space-around;
 		align-items: center;
 		padding: 10px;
-		border-image: linear-gradient(to bottom, #de8577, #d8c380, #7780de, #de8577) 30;
-		border-width: 0px 10px 0px 10px;
-		border-style: solid;
 	}
 	
 	.image {
