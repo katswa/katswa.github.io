@@ -319,11 +319,11 @@ p a {
 	cursor: pointer;
 }
 
-#gallery-header {
+.gallery-header {
 	text-align: center;
 }
 
-#gallery-header h1 {
+.gallery-header h1 {
 	margin: 1em;
 }
 
