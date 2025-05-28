@@ -32,6 +32,12 @@
 		<!-- Use the main area to add the main content of the webpage -->
 		<main class="main wrapper">
 			
+			<div class="gallery-header">
+				
+				<h1>Gallery</h1>
+				
+			</div>
+			
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
 				<div class="modal-content">
@@ -58,23 +64,41 @@
 			 	</div>
 			</section>
 			
-			<div class="large-gallery">
-			
-				<img src="images/vfw-artwork.jpg" alt="Watercolor artwork of a WW2 photograph" class="image">
-				<img src="images/boquet-artwork.jpg" alt="Watercolor artwork of a flower boquet" class="image">
+			<div class="gallery-header">
+				
+				<h2>Filter through the rest of my gallery</h2>
+				<div id="gallery-buttons"></div>
 				
 			</div>
 			
-			<div class="large-gallery">
+			<div id="gallery-sorter">
+			
+				<div class="large-gallery">
+			
+					<img src="images/vfw-artwork.jpg" data-tags="Traditional" alt="Watercolor artwork of a WW2 photograph" class="image">
+					<img src="images/boquet-artwork.jpg" data-tags="Traditional" alt="Watercolor artwork of a flower boquet" class="image">
 				
-				<img src="images/multicolored-cats.jpg" alt="Digital artwork of multiple colored cats" class="image">
-				<img src="images/bike-mural.jpg" alt="Outdoor mural of a bike and scenery" class="image">
+				</div>
 				
+				<div class="large-gallery">
+				
+					<img src="images/painted-lake.jpg" data-tags="Digital" alt="Digital artwork of a scenic lake and sunset" class="image">
+					<img src="images/painted-trees.jpg" data-tags="Digital" alt="Digital artwork of scenic mountains and trees" class="image">
+				
+				</div>
+			
+				<div class="large-gallery">
+				
+					<img src="images/multicolored-cats.jpg" data-tags="Digital" alt="Digital artwork of multiple colored cats" class="image">
+					<img src="images/bike-mural.jpg" data-tags="Traditional" alt="Outdoor mural of a bike and scenery" class="image">
+				
+				</div>
+			
 			</div>
 
-			<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sus!4v1707959400842!5m2!1sen!2sus!6m8!1m7!1sb-gHzakUNB0F5bxDcaDfgQ!2m2!1d48.28823987496875!2d-122.6487601327528!3f340.07963679686264!4f-10.442430047494781!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-			
 			<h2>Wish to visit my mural in person? Feel free to visit this mural and many others for no fee today.</h2>
+			
+			<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sus!4v1707959400842!5m2!1sen!2sus!6m8!1m7!1sb-gHzakUNB0F5bxDcaDfgQ!2m2!1d48.28823987496875!2d-122.6487601327528!3f340.07963679686264!4f-10.442430047494781!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 			
 		</main>
 	
@@ -87,6 +111,9 @@
 	</div>
 	
 	<script src="js/domevent.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+	<script src="js/filtering.js"></script>
 	
 </body>
 </html>
