@@ -1,6 +1,6 @@
 /*
 Author: Katie Swanson
-Date: 5 / 28 / 2025
+Date: 6 / 4 / 2025
 File Name: styles.css
 */
 
@@ -327,6 +327,28 @@ p a {
 	margin: 1em;
 }
 
+/* Style rules for form content on contact */
+
+span.error {
+	font-size: 0.75em;
+	padding-top: 1px;
+	margin-top: 0em;
+	margin-bottom: 1.4em;
+	display: block;
+	padding-left: 20px;
+	color: #de8577;
+}
+
+textarea + span.error, #bio-count {margin: 0;}
+
+.register input {
+	font-family: 'DM Serif Display', serif;
+	padding: 0em 0.5em 0em 0.5em;
+	font-size: 0.75em;
+	margin-top: 1em;
+}
+
+
 /* Style rules for footer content */
 footer {
 	border-image: linear-gradient(to right, #de8577, #d8c380, #7780de) 30;
@@ -402,7 +424,7 @@ footer p a {
 		margin-right: auto;
 	}
 	
-	.price-box {
+	.contact-box {
   	  	background: #2a2a2a;
 		color: white;
 		padding: 0.75em;
@@ -415,11 +437,17 @@ footer p a {
 		margin-right: auto;
 		font-size: 1.5em;
 		padding-bottom: 2em;
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
 	
-	.price-box h1 {
+	.contact-box h1 {
 		font-size: 1.7em;
 		padding: 0.7em;
+	}
+	
+	.contact-box label {
+		font-size: 0.75em;
 	}
 	
 	#price-title {
