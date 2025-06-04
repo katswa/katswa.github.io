@@ -43,7 +43,7 @@
 		
 			<div id="contact">
 				
-				<div class="price-box">
+				<div class="contact-box">
 					<h1>Watercolor base prices</h1>
 					
 					<div id="priceLoop"></div>
@@ -61,6 +61,87 @@
 					<div id="offerEnds"></div>
 				</div>
 				
+				<div class="contact-box">
+					
+				<h2>Get started today!</h2>
+					
+					<form method="post" action="/register" name="register">
+							
+					<fieldset>
+						
+					<legend>Customer details</legend>
+
+						<div class="name">
+							<label for="name" class="required">Name:</label>
+							<input type="text" placeholder="Enter your name" name="name" id="name" required title="Please enter your name">
+						</div>
+									
+						<div class="email">
+							<label for="email" class="required">Email:</label>
+							<input type="email" placeholder="you@example.com" name="email" id="email" required>
+						</div>
+							
+					</fieldset>
+							
+					<h3>Artwork</h3>
+						  
+					<fieldset>
+							
+					<legend>Commission details</legend>
+							
+						<div class="number">
+							<label for="number" class="required">Max budget (USD):</label>
+							<input type="number" name="number" id="number"  required>
+						</div>
+						
+						<label for="equipmentType">Format:</label>
+						<select id="equipmentType" name="equipmentType">
+							<option value="choose">ANY</option>
+							<option value="digital">digital</option>
+							<option value="watercolor">watercolor</option>
+							<option value="acrylic">acrylic</option>
+						</select>
+						
+						<div class="donedate">
+							<label for="donedate" class="required">Preferred done by date:</label>
+							<input type="date" name="donedate" id="donedate"  required>
+						</div>
+							
+						<div class="desc">
+							<label for="desc">Description (limit 200 char):<br></label>
+							<textarea name="desc" id="desc" rows="5" cols="30"></textarea>
+							<br> <span id="desc-count" class="hide">200</span>
+						</div>
+							
+					</fieldset>
+							
+					<h3>Optional</h3>
+							
+					<fieldset>
+							
+					<legend>How did you discover me?</legend>
+
+						<input type="radio" name="heard" value="search" id="search">
+						<label for="search">Search Engine</label><br>
+
+						<input type="radio" name="heard" value="talk" id="talk">
+						<label for="talk">Friend / Family member</label><br>
+									
+						<input type="radio" name="heard" value="media" id="media">
+						<label for="search">Social Media</label><br>
+
+						<input type="radio" name="heard" value="other" id="other">
+						<label for="other">Other</label><br>
+						<input type="text" name="other-input" id="other-text">
+						
+					</fieldset>
+							
+					<div class="register"><input type="submit" value="Submit"></div>
+							
+					</form>
+				
+				</div>
+				
 			</div>
 		
 		</main>
@@ -75,8 +156,11 @@
 	
 	</div>
 	
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
 	<script src="js/priceloop.js"></script>
 	<script src="js/offerexpiry.js"></script>
+	<script src="js/forms.js"></script>
 	
 </body>
 </html>
